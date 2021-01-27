@@ -8,42 +8,49 @@
 	<meta name="generator" content="Hugo">
 	<meta name="robots" content="noindex">
 	<meta name="googlebot" content="noindex">
+	<meta property="og:image" content="https://kukode.in/images/favicon-bnw.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="1024">
+	<meta property="og:image:height" content="1024">
+
 
 	<title>CDN Kukode.in</title>
 
-	<link rel="icon" type="image/png" href="https://kukode.in/images/favicon.png">
+	<link rel="icon" type="image/png" href="https://kukode.in/images/favicon-bnw.png">
 	<link rel="canonical" href="">
 
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="bootstrap-4/assets/dist/css/bootstrap.min.css"/>
-	<style>
-		.bd-placeholder-img {font-size: 1.125rem;text-anchor: middle;
-			-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
-		@media (min-width: 768px) {
-			.bd-placeholder-img-lg {font-size: 3.5rem;}}
-		html, body {height: 100%;}
-		body {display: -ms-flexbox;display: flex;-ms-flex-align: center;align-items: center;
-			padding-top: 40px;padding-bottom: 40px;}
-		.form-signin {width: 100%;max-width: 330px;padding: 15px;margin: auto;}
-		.form-signin .checkbox {font-weight: 400;}
-		.form-signin .form-control {position: relative;box-sizing: border-box;height: auto;padding: 10px;font-size: 16px;}
-		.form-signin .form-control:focus {z-index: 2;}
-		.form-signin input[type="email"] {margin-bottom: -1px;border-bottom-right-radius: 0;border-bottom-left-radius: 0;}
-		.form-signin input[type="password"] {margin-bottom: 10px;border-top-left-radius: 0;border-top-right-radius: 0;}
-	</style>
-</head>
-<body class="text-center">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	
-<form class="form-signin">
-	<a id="link" href="https://kukode.in/" target="_blank">
+	<script src="jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+	
+<div class="form-signin text-center">
+	<button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
 		<img src="https://kukode.in/images/favicon-bnw.png" alt="logo kukode.in" width="72" height="72">
-	</a>
+	</button>
 	<p id="message" class="my-3 font-weight-light"></p>
-</form>
+</div>
 
-<script src="jquery/dist/jquery.min.js"></script>
-<script src="bootstrap-4/assets/dist/js/bootstrap.min.js"></script>
-</script>
+<!-- The Modal -->
+<div class="modal fade" id="myModal" data-keyboard="true" tabindex="-1" aria-hidden="true" data-show=true>
+	<div class="modal-dialog  modal-lg modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content border-0 shadow">
+			<!-- Modal body -->
+			<div class="modal-body" id="modal-body">
+			</div>
+			<div class="modal-footer justify-content-md-center p-1 border-0 shadow-lg">
+				<small>Developed by <a href="https://kukode.in" target="_blank">Kukode.in</a></small>
+			</div>
+		</div>
+	</div>
+</div>
 
+<!-- <script src="popper/popper.min.js"></script> -->
+<script src="bootstrap-4/assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script>loadAssets("modal-body");</script>	
 </body>
 </html>

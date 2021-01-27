@@ -40,6 +40,6 @@ startTimer(dataAffiliate320);
 
 html -----
 <a id="ban-link" target="_blank"><img id="ban-img"></img></a>
-<script type="text/javascript" src="affiliate.js"></script>
+<script type="text/javascript" src="https://cdn.kukode.in/affiliate/affiliate.js"></script>
 <script type="text/javascript">startTimer(dataAffiliate320);</script>
 */
