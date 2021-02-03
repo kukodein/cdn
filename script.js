@@ -26,6 +26,7 @@ function loadAssets(idName) {
 		for (j in myAssets.assets[i].file) {
 			x += '<div class="input-group mb-2"><input id="'+myAssets.assets[i].file[j].id+'" class="form-control rounded form-control-sm" value="'+myAssets.assets[i].file[j].url+'"><button class="ml-1 btn btn-sm btn-outline-secondary" data-toggle="tooltip" title="Copy to clipboard">Copy</button></div>';
 		}
+		x += '<hr>';
 	}
 	document.getElementById(idName).innerHTML = x;
 }
