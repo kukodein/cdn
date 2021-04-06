@@ -4,7 +4,6 @@ var myAssets = {
 	"assets": [
 		{"name":"Bootstrap 4", "file": [
 			{"id":"bootstrap-4-css", "url":"https://cdn.kukode.in/bootstrap-4/assets/dist/css/bootstrap.min.css"},
-			{"id":"bootstrap-4-js", "url":"https://cdn.kukode.in/bootstrap-4/assets/dist/js/bootstrap.min.js"},
 			{"id":"bootstrap-4-js-budle", "url":"https://cdn.kukode.in/bootstrap-4/assets/dist/js/bootstrap.bundle.min.js"},
 		]},
 		{"name":"jQuery", "file": [
