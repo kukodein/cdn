@@ -70,11 +70,6 @@ $(function () {
 		$(this).attr("data-original-title","Copy to clipboard");
 	});
 	
-	$('.modal-close').on('click', function(){
-		$('#message').tooltip('show')
-	});
-	/*
-	*/
 	$("#myModal").on("hidden.bs.modal", function () {
 		$('#message').tooltip('show')
 	});
