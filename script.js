@@ -2,18 +2,38 @@ var x = "",i,j;
 var myAssets = {
 	"name":"CDN Kukode.in",
 	"assets": [
-		{"name":"Bootstrap 4", "file": [
-			{"id":"bootstrap-4-css", "url":"https://cdn.kukode.in/bootstrap-4/assets/dist/css/bootstrap.min.css"},
-			{"id":"bootstrap-4-js-budle", "url":"https://cdn.kukode.in/bootstrap-4/assets/dist/js/bootstrap.bundle.min.js"},
+		{
+			"name":"Bootstrap 3", 
+			"file": [
+				{"id":"bootstrap-3-css", "url":"https://cdn.kukode.in/bootstrap/3/css/bootstrap.min.css"},
+				{"id":"bootstrap-3-js", "url":"https://cdn.kukode.in/bootstrap/3/js/bootstrap.min.js"},
 		]},
-		{"name":"jQuery", "file": [
-			{"id":"jquery-js", "url":"https://cdn.kukode.in/jquery/dist/jquery.min.js"},
+		{
+			"name":"Bootstrap 4", 
+			"file": [
+				{"id":"bootstrap-4-css", "url":"https://cdn.kukode.in/bootstrap/4/css/bootstrap.min.css"},
+				{"id":"bootstrap-4-js-bundle", "url":"https://cdn.kukode.in/bootstrap/4/js/bootstrap.bundle.min.js"},
 		]},
-		{"name":"Font Awesome Free", "file": [
-			{"id":"fa-free-css", "url":"https://cdn.kukode.in/fontawesome-free/css/all.min.css"},
+		{
+			"name":"Bootstrap 5", 
+			"file": [
+				{"id":"bootstrap-5-css", "url":"https://cdn.kukode.in/bootstrap/5/css/bootstrap.min.css"},
+				{"id":"bootstrap-5-js-bundle", "url":"https://cdn.kukode.in/bootstrap/5/js/bootstrap.bundle.min.js"},
 		]},
-		{"name":"Feather Icon", "file": [
-			{"id":"feathericon-js", "url":"https://cdn.kukode.in/feathericon/plugin/feathericon/feather.min.js"},
+		{
+			"name":"jQuery", 
+			"file": [
+				{"id":"jquery-js", "url":"https://cdn.kukode.in/jquery/dist/jquery.min.js"},
+		]},
+		{
+			"name":"Font Awesome Free", 
+			"file": [
+				{"id":"fa-free-css", "url":"https://cdn.kukode.in/fontawesome-free/css/all.min.css"},
+		]},
+		{
+			"name":"Feather Icon", 
+			"file": [
+				{"id":"feathericon-js", "url":"https://cdn.kukode.in/feathericon/plugin/feathericon/feather.min.js"},
 		]},
 	]
 };
