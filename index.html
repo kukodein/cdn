@@ -28,20 +28,24 @@
 <body>
 	
 <div class="form-signin text-center">
-	<button type="button" class="btn btn-link rounded-circle p-2" data-toggle="modal" data-target="#myModal">
+	<button type="button" class="btn btn-link rounded-circle p-2 btn-image" data-toggle="modal" data-target="#myModal">
 		<img src="https://kukode.in/images/favicon-bnw.png" alt="logo kukode.in" width="72" height="72">
 	</button>
-	<p id="message" class="my-3 font-weight-light"></p>
+	<p id="message" class="my-3 font-weight-light" data-toggle="tooltip" data-placement="bottom" title="Click image"></p>
 </div>
 
 <!-- The Modal -->
 <div class="modal fade" id="myModal" data-keyboard="true" tabindex="-1" aria-hidden="true" data-show=true>
 	<div class="modal-dialog  modal-lg modal-dialog-centered modal-dialog-scrollable">
 		<div class="modal-content border-0 shadow">
-			<!-- Modal body -->
-			<div class="modal-body" id="modal-body">
+			<!-- Modal Header -->
+			<div class="modal-header justify-content-center p-1 border-0" style="box-shadow:0 0rem 1rem rgba(0,0,0,.2)!important;z-index:1;">
+				<small><button type="button" class="btn btn-sm btn-link modal-close" data-dismiss="modal">&times; close</button></small>
 			</div>
-			<div class="modal-footer justify-content-center p-1 border-0" style="box-shadow:0 1rem 2rem rgba(0,0,0,1)!important">
+			<!-- Modal body -->
+			<div class="modal-body" id="modal-body"></div>
+			<!-- Modal Footer -->
+			<div class="modal-footer justify-content-center p-1 border-0" style="box-shadow:0 1rem 2rem rgba(0,0,0,1)!important;z-index:1;">
 				<small>Developed by <a href="https://kukode.in" target="_blank">Kukode.in</a></small>
 			</div>
 		</div>

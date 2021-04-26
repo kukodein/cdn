@@ -55,7 +55,8 @@ $(function () {
 	// $('#myModal').modal('show');
 
 	// Function copy to clipboard when button clicked
-	$('button').on('click', function(){
+	$('.btn-image').on('click', function(){
+		$('#message').tooltip('hide');
 		var idSelect = $(this).prev('input').attr('id');
 		$("#demo").html(idSelect); 
 		var copyText = document.getElementById(idSelect);
@@ -68,4 +69,15 @@ $(function () {
 		$(this).tooltip('toggle');
 		$(this).attr("data-original-title","Copy to clipboard");
 	});
+	
+	$('.modal-close').on('click', function(){
+		$('#message').tooltip('show')
+	});
+	/*
+	*/
+	$("#myModal").on("hidden.bs.modal", function () {
+		$('#message').tooltip('show')
+	});
+
+	$('#message').tooltip('show')
 });
