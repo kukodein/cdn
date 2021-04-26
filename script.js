@@ -43,7 +43,7 @@ function loadAssets(idName) {
 	for (i in myAssets.assets) {
 		x += '<h5 class="mt-3">' + myAssets.assets[i].name + '</h5>';
 		for (j in myAssets.assets[i].file) {
-			x += '<div class="input-group mb-2"><input id="'+myAssets.assets[i].file[j].id+'" class="form-control rounded form-control-sm" value="'+myAssets.assets[i].file[j].url+'"><button class="ml-1 btn btn-sm btn-outline-secondary" data-toggle="tooltip" title="Copy to clipboard">Copy</button></div>';
+			x += '<div class="input-group mb-2"><input id="'+myAssets.assets[i].file[j].id+'" class="form-control rounded form-control-sm" value="'+myAssets.assets[i].file[j].url+'"><button class="ml-1 btn btn-sm btn-outline-secondary btn-copy" data-toggle="tooltip" title="Copy to clipboard">Copy</button></div>';
 		}
 		x += '<hr>';
 	}
@@ -55,8 +55,7 @@ $(function () {
 	// $('#myModal').modal('show');
 
 	// Function copy to clipboard when button clicked
-	$('.btn-image').on('click', function(){
-		$('#message').tooltip('hide');
+	$('.btn-copy').on('click', function(){
 		var idSelect = $(this).prev('input').attr('id');
 		$("#demo").html(idSelect); 
 		var copyText = document.getElementById(idSelect);
@@ -68,6 +67,10 @@ $(function () {
 		$(this).tooltip('show');
 		$(this).tooltip('toggle');
 		$(this).attr("data-original-title","Copy to clipboard");
+	});
+
+	$('.btn-image').on('click', function(){
+		$('#message').tooltip('hide');
 	});
 	
 	$("#myModal").on("hidden.bs.modal", function () {
