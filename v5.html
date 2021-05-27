@@ -20,19 +20,19 @@
 	<link rel="canonical" href="">
 
 	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" type="text/css" href="bootstrap/4/css/bootstrap.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="bootstrap/5/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/style5.css">
 	
 	<script src="jquery/dist/jquery.min.js"></script>
 </head>
 <body>
 	
 <div class="form-signin text-center">
-	<button type="button" class="btn btn-link rounded-circle p-2 btn-image" data-toggle="modal" data-target="#myModal">
+	<!-- <button type="button" class="btn btn-link rounded-circle p-2 btn-image" data-toggle="modal" data-target="#myModal"> -->
+	<button type="button" class="btn btn-link rounded-circle p-2 btn-image" data-bs-toggle="modal" data-bs-target="#myModal">
 		<img src="https://kukode.in/images/favicon-bnw.png" alt="logo kukode.in" width="72" height="72">
 	</button>
-	<p id="message" class="my-3 font-weight-light" data-toggle="tooltip" data-placement="bottom" title="Click image"></p>
+	<p id="message" class="my-3 font-weight-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click image"></p>
 </div>
 
 <!-- The Modal -->
@@ -41,7 +41,7 @@
 		<div class="modal-content border-0 shadow">
 			<!-- Modal Header -->
 			<div class="modal-header justify-content-center p-1 border-0" style="box-shadow:0 0rem 1rem rgba(0,0,0,.2)!important;z-index:1;">
-				<small><button type="button" class="btn btn-sm btn-link modal-close" data-dismiss="modal">&times; close</button></small>
+				<small><button type="button" class="btn btn-sm btn-link modal-close" data-bs-dismiss="modal">&times; close</button></small>
 			</div>
 			<!-- Modal body -->
 			<div class="modal-body" id="modal-body"></div>
@@ -53,9 +53,8 @@
 	</div>
 </div>
 
-<!-- <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script> -->
-<script src="bootstrap/4/js/bootstrap.bundle.min.js"></script>
-<script src="assets/script.js"></script>
+<script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+<script src="assets/script5.js"></script>
 <script>loadAssets("modal-body");</script>	
 </body>
 </html>
