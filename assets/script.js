@@ -6,6 +6,7 @@ var myAssets = {
 		{
 			"id":"bootstrap",
 			"name":"Bootstrap",
+			"icon":"fab fa-bootstrap",
 			"version": [
 				{
 					"id":"bs-v3",
@@ -33,20 +34,36 @@ var myAssets = {
 				},
 		]},
 		{
-			"id":"jquery", 
-			"name":"jQuery", 
-			"file": [
-				{"id":"jquery-js", "url":"https://cdn.kukode.in/jquery/dist/jquery.min.js"},
+			"id":"jquery",
+			"name":"jQuery",
+			"icon":"fab fa-js",
+			"version": [
+				{
+					"id":"jquery-v35",
+					"name":"v3.5",
+					"file": [
+						{"id":"jquery-v35-js", "url":"https://cdn.kukode.in/jquery/v3.5/jquery.min.js"},
+					]
+				},
+				{
+					"id":"jquery-v36",
+					"name":"v3.6",
+					"file": [
+						{"id":"jquery-v36-js", "url":"https://cdn.kukode.in/jquery/v3.6/jquery.min.js"},
+					]
+				},
 		]},
 		{
 			"id":"fontawesome", 
 			"name":"Font Awesome Free", 
+			"icon":"fab fa-font-awesome",
 			"file": [
 				{"id":"fa-free-css", "url":"https://cdn.kukode.in/fontawesome-free/css/all.min.css"},
 		]},
 		{
 			"id":"feathericon", 
 			"name":"Feather Icon", 
+			"icon":"fas fa-feather",
 			"file": [
 				{"id":"feathericon-js", "url":"https://cdn.kukode.in/feathericon/plugin/feathericon/feather.min.js"},
 		]},
@@ -60,7 +77,7 @@ function loadAssets(idName) {
 		x += `<div class="card">
 				<div class="card-header p-1" id="heading`+myAssets.assets[i].id+`">
 					<h2 class="mb-0">
-						<button class="btn btn-link btn-block text-left text-dark" type="button" data-toggle="collapse" data-target="#collapse`+myAssets.assets[i].id+`" aria-controls="collapse`+myAssets.assets[i].id+`">`+myAssets.assets[i].name+`</button>
+						<button class="btn btn-link btn-block text-left text-dark shadow-none text-decoration-none" type="button" data-toggle="collapse" data-target="#collapse`+myAssets.assets[i].id+`" aria-controls="collapse`+myAssets.assets[i].id+`"><i class="`+myAssets.assets[i].icon+`"></i> `+myAssets.assets[i].name+`</button>
 					</h2>
 				</div>`;
 		// x += '<h5 class="mt-3">'+myAssets.assets[i].name+'</h5>';
