@@ -129,7 +129,7 @@ function auto_safeconvert() {
         }
         if (a\_to\_vh == false) {
             var encryptedUrl = Base64.encode(a\_to\_vi);
-            a\_to\_ve\[i\].href = "http://website-anda.com/safelink?url=" + encryptedUrl;
+            a\_to\_ve\[i\].href = "https://wacanan.com/script/go?url=" + encryptedUrl;
             a\_to\_ve\[i\].rel = "nofollow";
             a\_to\_vb++;
             a\_to\_vc += i + ":::" + a\_to\_ve\[i\].href + "n";
